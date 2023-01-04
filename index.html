@@ -29,28 +29,38 @@
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <div class="container">
-        <nav class="site-nav">
-          <a href="/" lang="en" class="link logo"><span class="logo-part">Web</span>Studio</a>
+      <div class="header__container container">
+        <nav class="header__navigation navigation">
+          <a class="logo header__logo link" href="/" lang="en"
+            ><span class="logo__part">Web</span>Studio</a
+          >
           <!-- TODO: замінити посилання ./index.html на дійсне -->
-          <ul class="site-nav list">
-            <li class="list-item"><a href="./index.html" class="link current">Студія</a></li>
-            <li class="list-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li class="list-item"><a href="./index.html" class="link">Контакти</a></li>
+          <ul class="navigation__list list">
+            <li class="navigation__list-item">
+              <a class="navigation__link navigation__link--current link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link link" href="./index.html">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="list-item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="contacts-icon" width="16" height="12">
+        <ul class="header__contacts contacts list">
+          <li class="contacts__list-item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="list-item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contacts__list-item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -64,8 +74,10 @@
       <!-- Герой -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button hero" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -456,7 +468,9 @@
     <footer class="footer">
       <div class="container">
         <div class="container-adress">
-          <a href="/" lang="en" class="link logo"><span class="logo-part">Web</span>Studio</a>
+          <a href="/" lang="en" class="link logo footer__logo"
+            ><span class="logo__part">Web</span>Studio</a
+          >
           <address>
             <ul class="address list">
               <li>

@@ -102,18 +102,17 @@ img {
   font-family: inherit;
 }
 
-/* Container */
+/* <!-- Шапка сайту -- >  */
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* <!-- Шапка сайту -- >  */
-.header {
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .header__container {
@@ -284,6 +283,21 @@ img {
 }
 
 /* <!-- Секція Особливості (скритий заголовок)--> */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--title-text-color);
+}
+
 .section__title--visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -297,35 +311,20 @@ img {
   margin: -1px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section.features {
+.features {
   padding-bottom: 0;
 }
 
-.features.list {
+.features__list {
   display: flex;
   align-items: flex-start;
 }
 
-.features .list-item:not(:last-child) {
+.features__list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section__title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  color: var(--title-text-color);
-}
-
-.features-icon {
+.features__icon-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,20 +334,18 @@ img {
   background-color: var(--team-bgc);
 }
 
-.section .subtitle {
-  color: var(--title-text-color);
-}
-
-.features .subtitle {
+.features__title {
   margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
+  color: var(--title-text-color);
+
   text-transform: uppercase;
 }
 
-.features .text {
+.features__text {
   width: 270px;
 
   font-size: 14px;
@@ -356,16 +353,16 @@ img {
 }
 
 /* Секція Чим ми займаємось */
-.works.list {
+.works__list {
   display: flex;
   align-items: center;
 }
 
-.works .list-item {
+.works__list-item {
   position: relative;
 }
 
-.works .list-item:not(:last-child) {
+.works__list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -380,7 +377,7 @@ img {
   background-color: var(--works-bgc);
 }
 
-.overlay .text {
+.overlay__text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -473,19 +470,19 @@ img {
 
 /* Секція Постійні клієнти */
 
-.clients.list {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.clients .list-item {
+.clients__list-item {
   width: 170px;
   height: 92px;
 }
 
-.clients .link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,13 +496,13 @@ img {
   transition: border-color var(--anim-cubic), color var(--anim-cubic);
 }
 
-.clients .link:hover,
-.clients .link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 

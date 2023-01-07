@@ -1,0 +1,39 @@
+//* Base styles *//
+
+/* Body */
+body {
+  color: $primary-text-color;
+  background-color: $primary-bgc;
+  font-family: $primary-font-family, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Card set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+  &__item {
+    flex-basis: calc((100% - var(--indent)) * (var(--items)) - 1) / var(--items);
+  }
+}
+
+/* Buttons */
+.button {
+  padding: 0;
+
+  color: $primary-text-color;
+  background-color: $primary-bgc;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Container */
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

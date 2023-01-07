@@ -1,0 +1,22 @@
+/*  Шапка сайту  */
+.header {
+  border-bottom: 1px solid $header-border-color;
+
+  &__container {
+    @include centeredFlex();
+  }
+
+  &__navigation {
+    @include centeredFlex();
+  }
+
+  &__contacts {
+    @include centeredFlex();
+    margin-left: auto;
+  }
+
+  &__logo {
+    padding: 24px 0;
+    margin-right: 93px;
+  }
+}

@@ -4,7 +4,7 @@
 }
 
 .contacts__link {
-  @include positionFlex();
+  @include positionFlex($jc: flex-start);
 
   gap: 10px;
   padding: 32px 0 31px 0;

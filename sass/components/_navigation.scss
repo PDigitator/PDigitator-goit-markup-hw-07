@@ -2,7 +2,7 @@
 .navigation {
 }
 .navigation__list {
-  @include positionFlex();
+  @include positionFlex($jc: flex-start);
 }
 .navigation__list-item:not(:last-child) {
   margin-right: 50px;

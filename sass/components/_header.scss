@@ -5,15 +5,15 @@
 
 .header__container {
   @extend %container;
-  @include positionFlex();
+  @include positionFlex($jc: flex-start);
 }
 
 .header__navigation {
-  @include positionFlex();
+  @include positionFlex($jc: flex-start);
 }
 
 .header__contacts {
-  @include positionFlex();
+  @include positionFlex($jc: flex-start);
 
   margin-left: auto;
 }

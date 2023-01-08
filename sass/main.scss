@@ -1,8 +1,5 @@
 // * Utils-styles
-@import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/mixins';
-@import './utils/placeholders';
+@import './utils/index';
 
 // * Base-styles
 @import './base/normalize';
@@ -20,3 +17,20 @@
 @import './components/hero';
 @import './components/heading';
 @import './components/features';
+@import './components/works';
+@import './components/overlay';
+@import './components/team';
+@import './components/team-member';
+@import './components/social';
+@import './components/clients';
+@import './components/footer';
+@import './components/address';
+@import './components/folowing';
+@import './components/form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/close-cross';
+@import './components/checkbox';
+@import './components/portfolio';
+@import './components/filter';
+@import './components/product';

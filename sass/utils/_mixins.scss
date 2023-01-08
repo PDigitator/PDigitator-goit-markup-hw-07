@@ -1,4 +1,6 @@
-@mixin positionFlex($type: flex, $jc: flex-start, $ai: center) {
+/* Mixins */
+
+@mixin positionFlex($type: flex, $jc: center, $ai: center) {
   display: $type;
   justify-content: $jc;
   align-items: $ai;

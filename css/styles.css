@@ -84,7 +84,6 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 /* Reset end */
 
 /* Base styles */
@@ -471,7 +470,6 @@ body {
 }
 
 /* Секція Постійні клієнти */
-
 .clients__list {
   display: flex;
   justify-content: center;
@@ -628,17 +626,17 @@ body {
 
 .form-button {
   box-shadow: var(--btn-shadow);
-  /* border: none;
-  border-radius: 4px; */
+  border: none;
+  border-radius: 4px;
 
-  /* background-color: var(--accent-color);
-  color: var(--secondary-text-color); */
-  /* font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.06em; */
+  letter-spacing: 0.06em;
 
-  /* transition: background-color var(--anim-cubic); */
+  transition: background-color var(--anim-cubic);
 }
 
 .form-button:hover,
@@ -843,20 +841,20 @@ body {
   box-shadow: var(--btn-shadow);
   min-width: 200px;
   min-height: 50px;
-  /* border: none;
-  border-radius: 4px; */
+  border: none;
+  border-radius: 4px;
   padding: 10px 0;
   margin: 0 auto;
 
-  /* background-color: var(--accent-color);
-  color: var(--secondary-text-color); */
-  /* font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.06em; */
-  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-align: center;
 
-  /* transition: background-color var(--anim-cubic); */
+  transition: background-color var(--anim-cubic);
 }
 
 .modal__button:hover,
@@ -898,7 +896,6 @@ body {
 }
 
 /* Секція Портфоліо */
-
 .portfolio__filter {
   display: flex;
   justify-content: center;

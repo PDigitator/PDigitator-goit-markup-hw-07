@@ -23,13 +23,14 @@
     />
 
     <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <div class="header__container container">
+      <div class="header__container">
         <nav class="header__navigation navigation">
           <a class="logo header__logo link" href="/" lang="en"
             ><span class="logo__part">Web</span>Studio</a
@@ -75,7 +76,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button button" type="button" data-modal-open>
+          <button class="hero__button button button--primary" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -84,7 +85,7 @@
       <!-- Секція Особливості -->
       <section class="section features">
         <div class="container">
-          <h2 class="section__title section__title--visually-hidden">Особливості</h2>
+          <h2 class="heading visually-hidden">Особливості</h2>
           <ul class="features__list list">
             <li class="features__list-item">
               <div class="features__icon-wrap">
@@ -137,7 +138,7 @@
       <!-- Секція Чим ми займаємося -->
       <section class="section works">
         <div class="container">
-          <h2 class="section__title">Чим ми займаємося</h2>
+          <h2 class="heading">Чим ми займаємося</h2>
           <ul class="works__list list">
             <li class="works__list-item">
               <img src="./images/we-do-1.jpg" alt="Планшет на столі" width="370" height="294" />
@@ -164,7 +165,7 @@
       <!-- Секція Наша команда -->
       <section class="team section">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+          <h2 class="heading">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__list-item">
               <div class="team-member">
@@ -425,7 +426,7 @@
       <!-- Секція Постійні клієнти -->
       <section class="section clients">
         <div class="container">
-          <h2 class="section__title">Постійні клієнти</h2>
+          <h2 class="heading">Постійні клієнти</h2>
           <ul class="clients__list list">
             <li class="clients__list-item">
               <a class="clients__link client link" href="./index.html">
@@ -573,7 +574,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="button form-button form__button" type="submit">
+            <button class="button button--primary form-button form__button" type="submit">
               Підписатися
               <svg class="form-button__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
@@ -642,7 +643,7 @@
               <a class="modal__agreement-link link" href="#">Умови договору</a>
             </label>
           </div>
-          <button class="modal__button button" type="submit">Відправити</button>
+          <button class="modal__button button button--primary" type="submit">Відправити</button>
         </form>
       </div>
     </div>

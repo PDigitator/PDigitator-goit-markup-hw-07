@@ -1,5 +1,11 @@
-@mixin centeredFlex($type: flex, $main-location: flex-start, $cross-location: center) {
+@mixin positionFlex($type: flex, $jc: flex-start, $ai: center) {
   display: $type;
-  justify-content: $main-location;
-  align-items: $cross-location;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

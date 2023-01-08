@@ -14,15 +14,16 @@
     />
 
     <!-- Modern-normalize -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
 
     <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -74,22 +75,26 @@
       <!-- Портфоліо -->
       <section class="portfolio section">
         <div class="container">
-          <h1 class="section__title section__title--visually-hidden">Портфоліо</h1>
+          <h1 class="heading visually-hidden">Портфоліо</h1>
           <ul class="filter portfolio__filter list">
             <li class="filter__list-item">
-              <button class="filter__button button" type="button">Усі</button>
+              <button class="filter__button button button--secondary" type="button">Усі</button>
             </li>
             <li class="filter__list-item">
-              <button class="filter__button button" type="button">Веб-сайти</button>
+              <button class="filter__button button button--secondary" type="button">
+                Веб-сайти
+              </button>
             </li>
             <li class="filter__list-item">
-              <button class="filter__button button" type="button">Додатки</button>
+              <button class="filter__button button button--secondary" type="button">Додатки</button>
             </li>
             <li class="filter__list-item">
-              <button class="filter__button button" type="button">Дизайн</button>
+              <button class="filter__button button button--secondary" type="button">Дизайн</button>
             </li>
             <li class="filter__list-item">
-              <button class="filter__button button" type="button">Маркетинг</button>
+              <button class="filter__button button button--secondary" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- TODO: замінити посилання ./index.html на дійсне -->
@@ -354,7 +359,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="button form-button form__button" type="submit">
+            <button class="button button--primary form-button form__button" type="submit">
               Підписатися
               <svg class="form-button__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>

@@ -1,22 +1,24 @@
 /*  Шапка сайту  */
 .header {
-  border-bottom: 1px solid $header-border-color;
+  border-bottom: 1px solid var(--header-border-color);
+}
 
-  &__container {
-    @include centeredFlex();
-  }
+.header__container {
+  @extend %container;
+  @include positionFlex();
+}
 
-  &__navigation {
-    @include centeredFlex();
-  }
+.header__navigation {
+  @include positionFlex();
+}
 
-  &__contacts {
-    @include centeredFlex();
-    margin-left: auto;
-  }
+.header__contacts {
+  @include positionFlex();
 
-  &__logo {
-    padding: 24px 0;
-    margin-right: 93px;
-  }
+  margin-left: auto;
+}
+
+.header__logo {
+  padding: 24px 0;
+  margin-right: 93px;
 }
